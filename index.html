@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tarisai Group — Strategic Media, Impact & Investment</title>
+  <meta name="description" content="Tarisai Group: Pan-African strategic media, youth development, and purpose-aligned investments for the creative economy.">
+  <style>
+    :root{--accent:#0b1f33;--accent-2:#ffb703;--muted:#6b7b8a;--bg:#fbfcfd}
+    *,*::before,*::after{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;font-family:Inter, 'Helvetica Neue', Arial, sans-serif;color:var(--accent);background:var(--bg);-webkit-font-smoothing:antialiased}
+    nav{position:fixed;top:0;left:0;right:0;height:72px;background:linear-gradient(90deg, rgba(11,31,51,0.95), rgba(11,31,51,0.88));display:flex;align-items:center;padding:0 6%;z-index:1200}
+    .brand{display:flex;align-items:center;gap:12px;color:#fff;font-weight:700;letter-spacing:.3px;margin-right:30px}
+    .brand img{height:36px;width:auto;border-radius:4px}
+    .nav-links{margin-left:auto;display:flex;gap:22px}
+    .nav-links a{color:rgba(255,255,255,0.95);text-decoration:none;font-weight:600;transition:opacity .15s}
+    .nav-links a:hover{opacity:.85}
+    /* NOTE: place your provided logo at /assets/logo.png */
+    .hero{background:linear-gradient(180deg, rgba(11,31,51,0.5), rgba(11,31,51,0.5)),url('https://images.unsplash.com/photo-1519985176271-adb1088fa94c?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;padding:140px 6% 90px;color:#fff;background-attachment:fixed}
+    .container{max-width:1200px;margin:0 auto}
+    .hero h1{font-size:48px;margin:0 0 14px;line-height:1.02}
+    .hero p.lead{font-size:18px;color:rgba(255,255,255,0.92);max-width:820px;margin-bottom:22px}
+    .btn{display:inline-block;background:var(--accent-2);color:#111;padding:12px 22px;border-radius:8px;text-decoration:none;font-weight:700;box-shadow:0 6px 20px rgba(11,31,51,0.12)}
+    main{padding:70px 6% 40px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+    .card{background:#fff;border-radius:10px;padding:28px;box-shadow:0 10px 40px rgba(11,31,51,0.06)}
+    h2{color:var(--accent);font-size:28px;margin-top:0}
+    p{color:var(--muted);line-height:1.65}
+    .case-hero{display:flex;gap:20px;align-items:stretch}
+    .case-hero img{width:48%;border-radius:10px;object-fit:cover}
+    .case-hero .case-copy{flex:1}
+    .stats{display:flex;gap:30px;align-items:center;justify-content:space-between;margin:36px 0}
+    .stat{flex:1;text-align:center;padding:18px;background:linear-gradient(180deg,#fff,#f6f8fb);border-radius:8px}
+    .stat strong{display:block;font-size:28px;color:var(--accent)}
+    footer{background:var(--accent);color:#fff;padding:36px 6%;margin-top:40px}
+    footer .wrap{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center}
+    .contact-block a{color:#fff;text-decoration:none}
+    .muted{color:var(--muted)}
+    /* subtle animation */
+    .reveal{transform:translateY(24px);opacity:0;transition:all .6s cubic-bezier(.2,.9,.2,1)}
+    .reveal.visible{transform:none;opacity:1}
+    @media(max-width:1000px){.grid{grid-template-columns:repeat(2,1fr)}.case-hero img{display:none}}
+    @media(max-width:700px){.nav-links{display:none}.hero{padding:110px 5% 60px}.grid{grid-template-columns:1fr}.case-hero{flex-direction:column}.hero h1{font-size:32px}}
+  </style>
+  <script>
+    // simple reveal-on-scroll
+    function revealOnScroll(){
+      document.querySelectorAll('.reveal').forEach(el=>{
+        const r=el.getBoundingClientRect();
+        if(r.top < (window.innerHeight || document.documentElement.clientHeight) - 60){el.classList.add('visible')}
+      })
+    }
+    window.addEventListener('scroll',revealOnScroll,true);
+    window.addEventListener('load',()=>{revealOnScroll();
+      // graceful page title animation
+      const t=document.title; setTimeout(()=>document.title = 'Tarisai Group — Strategic Media & Investment',500);
+    });
+  </script>
+</head>
+<body>
+
+  <nav>
+  <div class="brand"><img src="assets/logo.svg" alt="Tarisai Group logo">Tarisai Group</div>
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#insights">Insights</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<header class="hero" role="banner">
+  <div class="container">
+    <h1 class="reveal">Strategic media, impact and investment for Africa’s creative economy</h1>
+    <p class="lead reveal">We partner with founders, cultural institutions and mission-driven investors to scale storytelling that creates measurable cultural and economic value across African markets.</p>
+    <div class="reveal"><a class="btn" href="#contact">Request a conversation</a></div>
+  </div>
+</header>
+
+<main>
+  <section id="about" class="container">
+    <div style="display:flex;gap:28px;align-items:flex-start;flex-wrap:wrap">
+      <div style="flex:1;min-width:300px">
+        <h2 class="reveal">Who we are</h2>
+        <p class="reveal">Tarisai Group is a Pan‑African institution at the junction of editorial excellence, youth empowerment and strategic capital. We build durable platforms — media properties, talent pathways and investment vehicles — that restore narrative ownership and create long-term economic value.</p>
+      </div>
+      <div style="flex:1;min-width:300px">
+        <h2 class="reveal">Our approach</h2>
+        <p class="reveal">We treat storytelling as infrastructure: disciplined, measurable and designed for scale. Our teams combine creative strategy, audience analytics and investor-grade diligence to deliver outcomes that matter to stakeholders and communities.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="container" style="margin-top:36px">
+    <h2 class="reveal">Capabilities</h2>
+    <div class="grid" style="margin-top:18px">
+      <div class="card reveal">
+        <h3 style="margin-top:0">Strategic Communications & Storytelling</h3>
+        <p>End-to-end narrative architecture: brand strategy, editorial campaigns, longform production and integrated social activation that moves audiences to action.</p>
+      </div>
+      <div class="card reveal">
+        <h3 style="margin-top:0">Talent & Impact Programs</h3>
+        <p>Structured accelerators, fellowships and capacity-building programmes that professionalise creative pathways and link talent to markets.</p>
+      </div>
+      <div class="card reveal">
+        <h3 style="margin-top:0">Investment Strategy & Advisory</h3>
+        <p>Commercial diligence, deal structuring and portfolio support for ventures in media, digital culture and the creative economy.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="insights" class="container" style="margin-top:48px">
+    <h2 class="reveal">Insights & Perspective</h2>
+    <div class="grid" style="margin-top:18px">
+      <div class="card reveal">
+        <h3>Scaling African storytelling</h3>
+        <p>How platforms and formats can accelerate audience monetisation across diverse markets—by combining editorial discipline, cross-border partnerships and product-led growth.</p>
+      </div>
+      <div class="card reveal">
+        <h3>Investing in cultural infrastructure</h3>
+        <p>Practical frameworks for investors to assess both impact and return in creative‑economy businesses, built from real deals and pilots.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="metrics" class="container" style="margin-top:48px">
+    <div class="stats">
+      <div class="stat reveal"><strong>50+</strong><span class="muted">Programs delivered</span></div>
+      <div class="stat reveal"><strong>30M+</strong><span class="muted">Audience reach</span></div>
+      <div class="stat reveal"><strong>20+</strong><span class="muted">Active investments & partnerships</span></div>
+    </div>
+  </section>
+
+  <section id="contact" class="container" style="margin-top:24px">
+    <h2 class="reveal">Contact</h2>
+    <p class="lead reveal">For partnership enquiries, speaking opportunities, or investment conversations, reach out to our team. We prioritise high‑impact collaborations.</p>
+    <div style="display:flex;gap:18px;flex-wrap:wrap;align-items:center">
+      <div class="contact-block reveal">
+        <p><strong>Phone:</strong> <a href="tel:+263779874024">+263 779 874 024</a></p>
+        <p><strong>Email:</strong> <a href="mailto:nashjumbe@gmail.com">nashjumbe@gmail.com</a></p>
+        <p>Zimbabwe | Pan‑African Reach</p>
+      </div>
+      <div class="reveal">
+        <a class="btn" href="mailto:nashjumbe@gmail.com?subject=Partnership%20Enquiry">Email us</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>© 2026 Tarisai Group</div>
+    <div style="text-align:right; font-size:14px">Designed for partners, creators and investors</div>
+  </div>
+</footer>
+
+</body>
+</html>
